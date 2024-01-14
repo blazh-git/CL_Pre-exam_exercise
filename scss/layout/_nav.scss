@@ -1,0 +1,28 @@
+@import "../general/mixins";
+@import "../general/variables";
+
+.navigation {
+  height: 133px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .nav-main-logo {
+    width: 174px;
+    height: 60px;
+  }
+  .nav-search {
+    height: 32px;
+    width: 32px;
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    p {
+      @include fontUbuntu(24px, 300);
+      color: $color-main-dark;
+    }
+    .nav-menu-icon {
+      margin-left: 15px;
+    }
+  }
+}

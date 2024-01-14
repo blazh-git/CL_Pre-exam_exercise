@@ -1,0 +1,405 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  height: 133px;
+  display: flex;
+}
+
+.navigation .nav-main-logo {
+  width: 174px;
+  height: 60px;
+}
+
+.navigation .nav-search {
+  width: 32px;
+  height: 32px;
+}
+
+.navigation .nav-menu {
+  align-items: center;
+  display: flex;
+}
+
+.navigation .nav-menu p {
+  color: #333;
+  font-family: Ubuntu, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.navigation .nav-menu .nav-menu-icon {
+  margin-left: 15px;
+}
+
+.header-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.header-container .header-content {
+  justify-content: space-between;
+  margin-bottom: 35px;
+  display: flex;
+}
+
+.header-container .header-content .header-text {
+  width: 60%;
+}
+
+.header-container .header-content .header-text .greeting {
+  font-optical-sizing: auto;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  font-family: Rubik, sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  position: relative;
+}
+
+.header-container .header-content .header-text .greeting:before {
+  content: "";
+  background-image: url("horizontal-line 1.821d0152.svg");
+  width: 48px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.header-container .header-content .header-text .introduction {
+  font-optical-sizing: auto;
+  margin-bottom: 20px;
+  font-family: Rubik, sans-serif;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.header-container .header-content .header-text .introduction span {
+  font-weight: 600;
+}
+
+.header-container .header-content .header-text .header-about-me {
+  font-optical-sizing: auto;
+  margin-bottom: 20px;
+  font-family: Rubik, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.15em;
+}
+
+.header-container .header-content .header-text .header-about-me-additional {
+  font-optical-sizing: auto;
+  margin-bottom: 20px;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25em;
+}
+
+.header-container .header-content .sarah-pic {
+  width: 30%;
+}
+
+.header-container .header-bot-section {
+  justify-content: flex-start;
+  display: flex;
+}
+
+.header-container .header-bot-section .icons {
+  width: 50%;
+}
+
+.header-container .header-bot-section .icons img {
+  margin-right: 20px;
+}
+
+.header-container .header-bot-section .scroll-container {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.header-container .header-bot-section .scroll-container .scroll-text {
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.header-container .header-bot-section .scroll-container .scroll-icon {
+  color: #3a3a3a;
+  height: 32px;
+}
+
+.about-me-container .about-me-content {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.about-me-container .about-me-content .about-me-text {
+  font-optical-sizing: auto;
+  margin-bottom: 55px;
+  font-family: Rubik, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.about-me-container .about-me-content .img-container .background-img {
+  width: 1125px;
+  height: auto;
+}
+
+.wid-container {
+  margin-bottom: 0 !important;
+}
+
+.wid-container .wid-content {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.wid-container .wid-content .wid-h2 {
+  font-optical-sizing: auto;
+  margin-bottom: 60px;
+  font-family: Rubik, sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.wid-container .wid-content .column-container {
+  justify-content: space-between;
+  display: flex;
+}
+
+.wid-container .wid-content .column-container .column {
+  color: #333;
+  background-color: #d6d6d6;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 409px;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.wid-container .wid-content .column-container .column h3 {
+  font-optical-sizing: auto;
+  margin-bottom: 30px;
+  font-family: Rubik, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.wid-container .wid-content .column-container .column p {
+  font-optical-sizing: auto;
+  margin-bottom: 60px;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.wid-container .wid-content .column-container .column .read-more {
+  justify-content: space-between;
+  height: 25px;
+  display: flex;
+}
+
+.wid-container .wid-content .column-container .column .read-more p {
+  font-optical-sizing: auto;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.wid-container .wid-content .column-container .column .read-more img {
+  height: 15px;
+}
+
+.wid-container .wid-content .column-container .dark {
+  color: #fff;
+  background-color: #333;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 409px;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.wid-container .wid-content .wid-bot-section {
+  align-items: center;
+  height: 20px;
+  margin-top: 60px;
+  display: flex;
+}
+
+.wid-container .wid-content .wid-bot-section .empty {
+  width: 33.33%;
+}
+
+.wid-container .wid-content .wid-bot-section .dots {
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  display: flex;
+}
+
+.wid-container .wid-content .wid-bot-section .dots .dot-active {
+  background-color: #fff;
+  border: 7px solid #333;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+}
+
+.wid-container .wid-content .wid-bot-section .dots .dot {
+  background-color: #333;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 15px;
+}
+
+.wid-container .wid-content .wid-bot-section .arrows {
+  justify-content: flex-end;
+  width: 33.33%;
+  display: flex;
+}
+
+.wid-container .wid-content .wid-bot-section .arrows img {
+  height: 10px;
+  margin-left: 10px;
+}
+
+.footer-container {
+  text-align: center;
+  background-color: #333;
+  flex-direction: column;
+  align-items: center;
+  height: 631px;
+  padding: 50px 0;
+  display: flex;
+  margin-bottom: 0 !important;
+}
+
+.footer-container .bg-container {
+  background-image: url("Hello 1.acbc74c8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  padding-top: 140px;
+  display: flex;
+}
+
+.footer-container .bg-container .get-in-touch p {
+  font-optical-sizing: auto;
+  color: #fff;
+  margin-bottom: 25px;
+  font-family: Rubik, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.footer-container .bg-container .get-in-touch h4 {
+  font-optical-sizing: auto;
+  color: #fff;
+  margin-bottom: 60px;
+  font-family: Rubik, sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.footer-container .bg-container .get-in-touch .btn {
+  font-optical-sizing: auto;
+  color: #3a3a3a;
+  background-color: #fff;
+  border: none;
+  margin-bottom: 80px;
+  padding: 20px 40px;
+  font-family: Rubik, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.footer-container .bg-container .get-in-touch .btn:hover {
+  cursor: pointer;
+}
+
+.footer-container .bg-container .footer-icons {
+  justify-content: center;
+  display: flex;
+}
+
+.footer-container .bg-container .footer-icons img {
+  margin: 0 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1125px;
+  margin-bottom: 140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=index.574c7455.css.map */

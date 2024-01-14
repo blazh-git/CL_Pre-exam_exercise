@@ -1,0 +1,29 @@
+@import "../general/variables";
+
+@mixin fontRubik($fontSize : 1em, $fontWeight : 300) {
+  font-family: "Rubik", sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-optical-sizing: auto;
+  font-style: normal;
+  @content;
+}
+
+@mixin fontUbuntu($fontSize : 1em, $fontWeight : 300) {
+  font-family: "Ubuntu", sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  @content;
+}
+
+@mixin widSquare($bgColor : $color-main-light, $fontColor : $color-main-dark) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+  width: 30%;
+  height: 409px;
+  background-color: $bgColor;
+  color: $fontColor;
+}
+

@@ -1,0 +1,54 @@
+@import "../general/mixins";
+@import "../general/variables";
+
+.footer-container {
+  margin-bottom: 0!important;
+  padding: 50px 0;
+  height: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $color-main-dark;
+  .bg-container {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    background-image: url("../assets/Hello 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .get-in-touch {
+      p {
+        @include fontRubik(32px);
+        color: $color-light;
+        margin-bottom: 25px;
+      }
+      h4 {
+        @include fontRubik(45px);
+        color: $color-light;
+        margin-bottom: 60px;
+      }
+      .btn {
+        @include fontRubik(28px);
+        background-color: $color-light;
+        color: $color-secondary;
+        border: none;
+        padding: 20px 40px;
+        margin-bottom: 80px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      img {
+        margin: 0 60px;
+      }
+    }
+  }
+}

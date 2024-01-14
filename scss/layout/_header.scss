@@ -1,0 +1,75 @@
+@import "../general/mixins";
+@import "../general/variables";
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    .header-text {
+      width: 60%;
+      .greeting {
+        padding-left: 60px;
+        position: relative;
+        margin-bottom: 20px;
+        @include fontRubik(34px, 600);
+        &:before {
+          content: "";
+          background-image: url("../assets/horizontal-line 1.svg");
+          width: 48px;
+          height: 2px;
+          position: absolute;
+          top: 50%;
+          left: 0;
+        }
+      }
+      .introduction {
+        @include fontRubik(74px);
+        span {
+          font-weight: 600;
+        }
+        margin-bottom: 20px;
+      }
+      .header-about-me {
+        @include fontRubik(40px);
+        line-height: 1.15em;
+        margin-bottom: 20px;
+      }
+      .header-about-me-additional {
+        @include fontRubik(24px);
+        line-height: 1.25em;
+        margin-bottom: 20px;
+      }
+    }
+    .sarah-pic {
+      width: 30%;
+    }
+  }
+  .header-bot-section {
+    display: flex;
+    justify-content: flex-start;
+    .icons {
+      width: 50%;
+      img {
+        margin-right: 20px;
+      }
+    }
+    .scroll-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .scroll-text {
+        @include fontRubik(18px, 100);
+        text-transform: uppercase;
+        color: $color-main-dark;
+        margin-bottom: 10px;
+      }
+      .scroll-icon {
+        height: 32px;
+        color: $color-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "general/variables";
+@import "general/mixins";
+@import "general/reset";
+
+@import "layout/nav";
+@import "layout/header";
+@import "layout/about-me";
+@import "layout/what-i-do";
+@import "layout/footer";
+
+
+/*
+html, body {
+  width: 1920px;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 140px;
+}
+
